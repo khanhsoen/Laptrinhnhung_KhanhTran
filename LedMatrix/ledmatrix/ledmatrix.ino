@@ -1,33 +1,32 @@
-int rowa = 6;
-int rowb = 5;
-int rowc = 4;
+int rowcl = 7;
+int rowla = 3;
+int rowda = 4;
 
-int cola = 13;
-int colb = 12;
-int colc = 11;
+int colcl = 13;
+int colla = 11;
+int colda = 12;
 
 void setup() {
   // put your setup code here, to run once:
-  pinMode(rowa, OUTPUT);
-  pinMode(rowb, OUTPUT);
-  pinMode(rowc, OUTPUT);
+  pinMode(rowda, OUTPUT);
+  pinMode(rowla, OUTPUT);
+  pinMode(rowcl, OUTPUT);
 
-  pinMode(cola, OUTPUT);
-  pinMode(colb, OUTPUT);
-  pinMode(colc, OUTPUT);
+  pinMode(colcl, OUTPUT);
+  pinMode(colla, OUTPUT);
+  pinMode(colda, OUTPUT);
 
 }
 
 void loop() {
   // put your main code here, to run repeatedly:
-  
-    digitalWrite(4, LOW);
-    shiftOut(5, 6, MSBFIRST, 00000100); //0
-    digitalWrite(4, HIGH);
-
-    digitalWrite(11, LOW);
-    shiftOut(12, 13, MSBFIRST, 00100000); //0
-    digitalWrite(11, HIGH);
+    digitalWrite(rowla, LOW);
+    shiftOut(rowda , rowcl, MSBFIRST, 0); //0
+    digitalWrite(rowla, HIGH);
+    
+    digitalWrite(colla, LOW);
+    shiftOut(colda, colcl, MSBFIRST, 255); //0
+    digitalWrite(colla, HIGH);
     delay(100);
-  
+    
 }
