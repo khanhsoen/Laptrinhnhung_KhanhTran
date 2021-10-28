@@ -71,3 +71,9 @@ void loop() {
   // digitalWrite(latchpin, HIGH);
   // delay(1000);
 }
+zero();
+  delay(1000);
+  one();
+  delay(1000);
+  two();
+  delay(1000);
