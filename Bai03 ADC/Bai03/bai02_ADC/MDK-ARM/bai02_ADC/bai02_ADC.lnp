@@ -1,0 +1,28 @@
+--cpu Cortex-M4.fp
+"bai02_adc\startup_stm32f401xe.o"
+"bai02_adc\main.o"
+"bai02_adc\stm32f4xx_it.o"
+"bai02_adc\stm32f4xx_hal_msp.o"
+"bai02_adc\stm32f4xx_hal_adc.o"
+"bai02_adc\stm32f4xx_hal_adc_ex.o"
+"bai02_adc\stm32f4xx_ll_adc.o"
+"bai02_adc\stm32f4xx_hal_rcc.o"
+"bai02_adc\stm32f4xx_hal_rcc_ex.o"
+"bai02_adc\stm32f4xx_hal_flash.o"
+"bai02_adc\stm32f4xx_hal_flash_ex.o"
+"bai02_adc\stm32f4xx_hal_flash_ramfunc.o"
+"bai02_adc\stm32f4xx_hal_gpio.o"
+"bai02_adc\stm32f4xx_hal_dma_ex.o"
+"bai02_adc\stm32f4xx_hal_dma.o"
+"bai02_adc\stm32f4xx_hal_pwr.o"
+"bai02_adc\stm32f4xx_hal_pwr_ex.o"
+"bai02_adc\stm32f4xx_hal_cortex.o"
+"bai02_adc\stm32f4xx_hal.o"
+"bai02_adc\stm32f4xx_hal_exti.o"
+"bai02_adc\stm32f4xx_hal_tim.o"
+"bai02_adc\stm32f4xx_hal_tim_ex.o"
+"bai02_adc\system_stm32f4xx.o"
+--strict --scatter "bai02_ADC\bai02_ADC.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "bai02_ADC.map" -o bai02_ADC\bai02_ADC.axf

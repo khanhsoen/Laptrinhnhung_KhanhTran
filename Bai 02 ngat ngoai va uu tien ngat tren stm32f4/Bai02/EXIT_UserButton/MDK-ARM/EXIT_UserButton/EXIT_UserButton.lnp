@@ -1,0 +1,25 @@
+--cpu Cortex-M4.fp
+"exit_userbutton\startup_stm32f401xe.o"
+"exit_userbutton\main.o"
+"exit_userbutton\stm32f4xx_it.o"
+"exit_userbutton\stm32f4xx_hal_msp.o"
+"exit_userbutton\stm32f4xx_hal_tim.o"
+"exit_userbutton\stm32f4xx_hal_tim_ex.o"
+"exit_userbutton\stm32f4xx_hal_rcc.o"
+"exit_userbutton\stm32f4xx_hal_rcc_ex.o"
+"exit_userbutton\stm32f4xx_hal_flash.o"
+"exit_userbutton\stm32f4xx_hal_flash_ex.o"
+"exit_userbutton\stm32f4xx_hal_flash_ramfunc.o"
+"exit_userbutton\stm32f4xx_hal_gpio.o"
+"exit_userbutton\stm32f4xx_hal_dma_ex.o"
+"exit_userbutton\stm32f4xx_hal_dma.o"
+"exit_userbutton\stm32f4xx_hal_pwr.o"
+"exit_userbutton\stm32f4xx_hal_pwr_ex.o"
+"exit_userbutton\stm32f4xx_hal_cortex.o"
+"exit_userbutton\stm32f4xx_hal.o"
+"exit_userbutton\stm32f4xx_hal_exti.o"
+"exit_userbutton\system_stm32f4xx.o"
+--strict --scatter "EXIT_UserButton\EXIT_UserButton.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXIT_UserButton.map" -o EXIT_UserButton\EXIT_UserButton.axf
