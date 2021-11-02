@@ -58,7 +58,7 @@ int main(void)
   HAL_Init();
   SystemClock_Config();
   MX_GPIO_Init();
-
+	SangHetLed();
 }
 void SangHetLed(){
 	HAL_GPIO_WritePin(GPIOD, GPIO_PIN_0, GPIO_PIN_SET); // Sáng dèn D1
@@ -84,6 +84,7 @@ void SangHetLed(){
 	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_3, GPIO_PIN_SET); // Sáng dèn D20
 	HAL_GPIO_WritePin(GPIOE, GPIO_PIN_4, GPIO_PIN_SET); // Sáng dèn D21
 }
+
 
 /**
   * @brief System Clock Configuration
